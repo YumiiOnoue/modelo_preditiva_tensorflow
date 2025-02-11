@@ -1,17 +1,27 @@
-# Projeto: The Boston Housing Dataset
+# Análise Preditiva com TensorFlow: Previsão de Valores de Imóveis em Boston
 
-## Informações gerais do dataset
+## Introdução
+Este projeto tem como objetivo desenvolver um modelo preditivo para estimar o valor mediano de residências na área de Boston, utilizando técnicas de Regressão Linear implementadas com TensorFlow. Os dados foram coletados pelo U.S. Census Service e estão disponíveis aqui.
 
-Este é um mini-projeto elaborado no curso de Python da Data Science Academy.
-Os dados utilizados nesse mini-projeto foram coletadas pelo U.S Census Service e contém informações sobre as moradias na área de Boston. 
-Você pode encontrar os dados e mais informações nesse link: https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html
-
-## Premissas do negócio
-
+## Descrição do Dataset
 - Número de Observações: 506
-- Os primeiros 13 recursos são recursos preditivos numéricos / categóricos.
-- O último (atributo 14): o valor mediano é a variável de destino.
+- Variáveis Preditivas: 13 atributos numéricos/categóricos
+- Variável Alvo: Valor mediano das casas ocupadas (MEDV)
+Para mais detalhes sobre as variáveis, consulte a seção "Informações gerais do dataset" no repositório.
 
-## Estratégias e soluções
+## Metodologia
+- Análise Exploratória de Dados (EDA): Exame inicial dos dados para entender distribuições e identificar possíveis outliers.
+- Pré-processamento: Tratamento de dados faltantes e normalização dos atributos.
+- Divisão dos Dados: Separação em conjuntos de treino (80%) e teste (20%).
+- Desenvolvimento do Modelo: Implementação de uma Regressão Linear simples utilizando TensorFlow, considerando o número médio de quartos por habitação (RM) como variável independente e o valor mediano das casas (MEDV) como variável dependente.
+- Avaliação do Modelo: Medição do desempenho do modelo no conjunto de teste e análise dos resultados.
 
-Para a análise dos dados foi utilizado a Regressão Linear, considerando RM (número médio de quartos por habitação) como sendo a variável independente e MEDV (valor médio de casas ocupadas) a variável dependente. Os dados também foram divididos na proporção de 80/20 para treino e teste.
+## Tecnologias Utilizadas
+- Python
+- TensorFlow
+- Pandas
+- NumPy
+- Matplotlib
+
+## Resultados
+Os resultados detalhados, incluindo gráficos e métricas de desempenho do modelo, estão disponíveis no notebook modelagem_preditiva_tensorflow.ipynb.
