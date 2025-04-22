@@ -1,4 +1,4 @@
-# Análise Preditiva com TensorFlow: Previsão de Valores de Imóveis em Boston
+# Previsão de Valores de Imóveis em Boston
 
 ## Introdução
 Este projeto tem como objetivo desenvolver um modelo preditivo para estimar o valor mediano de residências na área de Boston, utilizando técnicas de Regressão Linear implementadas com TensorFlow. Os dados foram coletados pelo U.S. Census Service e estão disponíveis aqui.
@@ -19,9 +19,9 @@ Para mais detalhes sobre as variáveis, consulte a seção "Informações gerais
 ## Tecnologias Utilizadas
 - Python
 - TensorFlow
-- Pandas
-- NumPy
-- Matplotlib
+- Pandas - Manipulação de dados
+- Matplotlib - Visualização de dados
+- NumPy - Cálculos estatísticos
 
 ## Resultados
 Os resultados detalhados, incluindo gráficos e métricas de desempenho do modelo, estão disponíveis no notebook modelagem_preditiva_tensorflow.ipynb.
